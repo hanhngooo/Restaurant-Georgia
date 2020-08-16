@@ -6,6 +6,16 @@
   right: 5%;
   z-index: 300;
 
+  @media (max-width: 800px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: 500px) {
+    width: 25px;
+    height: 25px;
+  }
+
   .menu {
     @extend %fullSpace;
     display: flex;
@@ -20,6 +30,13 @@
       background-color: $color-primary;
       transform-origin: right;
       transition: all 0.5s 0.5s;
+
+      @media (max-width: 800px) {
+        height: 3px;
+      }
+      @media (max-width: 500px) {
+        height: 2px;
+      }
     }
   }
 }
@@ -41,12 +58,12 @@
     height: 90px;
   }
 
-  //   @media (max-width: 500px) {
-  //     height: 50px;
-  //     width: 50px;
-  //     font-size: 30px;
-  //     border-width: 2px;
-  //   }
+  @media (max-width: 500px) {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-width: 2px;
+  }
 }
 
 .main-name {
@@ -55,14 +72,14 @@
   color: $color-secondary;
   @include textStyles;
 
-  //   @media (max-width: 1000px) {
-  //     font-size: 40px;
-  //   }
+  @media (max-width: 1000px) {
+    font-size: 40px;
+  }
 
-  //   @media (max-width: 500px) {
-  //     font-size: 20px;
-  //     text-align: center;
-  //   }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .sub-name {
@@ -101,7 +118,6 @@
 
 .sub-heading {
   font-family: $font-josefinSans;
-  font-size: 60px;
   font-weight: 300;
   color: $color-secondary;
   margin-bottom: 80px;
@@ -184,12 +200,34 @@
       font-family: $font-nunito;
       font-size: 50px;
       @include textStyles(capitalize);
+
+      @media (max-width: 900px) {
+        font-size: 35px;
+      }
+      @media (max-width: 650px) {
+        font-size: 25px;
+      }
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
 
     &-paragraph {
       font-family: $font-josefinSans;
       font-size: 30px;
       margin-bottom: 30px;
+      @include textStyles(capitalize);
+
+      @media (max-width: 900px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 15px;
+      }
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
 
     &-btn {
@@ -206,6 +244,18 @@
       border-radius: 30px;
       outline: none;
       cursor: pointer;
+
+      @media (max-width: 900px) {
+        font-size: 12px;
+        width: 130px;
+        height: 30px;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+      }
     }
   }
   &-img {
