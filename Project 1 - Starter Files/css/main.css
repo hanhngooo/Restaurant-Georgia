@@ -137,7 +137,9 @@ body {
 .about-us {
   height: 90vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   @media (max-width: 900px) {
     .about-us {
       height: 70vh; } }
@@ -162,7 +164,6 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 100px;
-    margin-top: 40px;
     box-sizing: border-box; }
     @media (max-width: 1300px) {
       .about-us-right {
